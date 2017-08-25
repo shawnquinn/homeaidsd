@@ -22,10 +22,27 @@ var browserSyncOptions = {
     notify: false
 };
 
+// Browsers you care about for autoprefixing.
+// Browserlist https        ://github.com/ai/browserslist
+const AUTOPREFIXER_BROWSERS = [
+    'last 2 version',
+    '> 1%',
+    'ie >= 9',
+    'ie_mob >= 10',
+    'ff >= 30',
+    'chrome >= 34',
+    'safari >= 7',
+    'opera >= 23',
+    'ios >= 7',
+    'android >= 4',
+    'bb >= 10'
+  ];
+
 
 // Defining requirements
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
+var autoprefixer = require('gulp-autoprefixer'); // Autoprefixing magic.
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var cssnano = require('gulp-cssnano');
@@ -107,7 +124,10 @@ gulp.task('sass', function () {
                 this.emit('end');
             }
         }))
+        .pipe(sourcemaps.init()) // add this
         .pipe(sass())
+        .pipe( autoprefixer( AUTOPREFIXER_BROWSERS ) )
+        .pipe(sourcemaps.write('./')) // add this
         .pipe(gulp.dest('./css'))
         .pipe(rename('custom-editor-style.css'))
     return stream;
@@ -175,7 +195,7 @@ gulp.task('cleancss', function() {
 });
 
 gulp.task('styles', function(callback){ gulpSequence('sass', 'minify-css')(callback) });
- 
+
 
 // Run:
 // gulp browser-sync
@@ -191,8 +211,8 @@ gulp.task('browser-sync', function() {
 gulp.task('watch-bs', ['browser-sync', 'watch', 'scripts'], function () { });
 
 
-// Run: 
-// gulp scripts. 
+// Run:
+// gulp scripts.
 // Uglifies and concat all JS files into one
 gulp.task('scripts', function() {
     var scripts = [
@@ -202,7 +222,10 @@ gulp.task('scripts', function() {
 
         // End - All BS4 stuff
 
-        basePaths.dev + 'js/skip-link-focus-fix.js'
+        basePaths.dev + 'js/skip-link-focus-fix.js',
+
+        // Any Custom JavaScript
+        basePaths.dev + 'js/custom.js'
     ];
   gulp.src(scripts)
     .pipe(concat('theme.min.js'))
@@ -230,7 +253,7 @@ gulp.task('copy-assets', ['clean-source'], function() {
 // Copy all Bootstrap JS files
     var stream = gulp.src(basePaths.node + 'bootstrap/dist/js/**/*.js')
        .pipe(gulp.dest(basePaths.dev + '/js/bootstrap4'));
-  
+
 
 // Copy all Bootstrap SCSS files
     gulp.src(basePaths.node + 'bootstrap/scss/**/*.scss')
@@ -261,7 +284,7 @@ gulp.task('copy-assets', ['clean-source'], function() {
 // Copy Popper JS files
     gulp.src(basePaths.node + 'popper.js/dist/umd/popper.min.js')
         .pipe(gulp.dest(basePaths.js));
-        
+
     gulp.src(basePaths.node + 'popper.js/dist/umd/popper.js')
         .pipe(gulp.dest(basePaths.js));
     return stream;

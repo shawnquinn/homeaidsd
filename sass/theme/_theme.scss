@@ -1,1 +1,110 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+// Global Styles
+
+* {
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: $brand-primary;
+}
+
+// Header Styles
+
+.bg-blue {
+  background-color: $brand-primary;
+}
+
+.bg-light {
+  background-color: $white !important;
+}
+
+.custom-logo-link img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+// Navigation
+//
+nav {
+  a {
+    transition: all 0.27s ease;
+    text-transform: uppercase;
+    color: $brand-black !important;
+    font-family: $font-body;
+    font-weight: 600;
+
+    &:hover {
+      color: $brand-primary !important;
+    }
+  }
+
+  & .secondary-nav a {
+    transition: all 0.27s ease;
+    text-transform: normal;
+    color: $white !important;
+    font-family: $font-body;
+    font-weight: 400;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 1.75rem;
+  padding-left: 1.75rem;
+}
+// Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-header;
+  font-weight: 700;
+}
+// Elements
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 5rem;
+  font-family: $font-header;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1rem 3rem;
+
+  &-primary {
+    border-color: $brand-primary;
+    background-color: $brand-primary;
+
+    &:hover {
+      color: $brand-primary;
+      border-color: $brand-primary;
+      background-color: $white;
+    }
+  }
+
+  &-secondary {
+    color: $brand-primary;
+    border-color: $brand-primary;
+    background-color: $white;
+
+    &:hover {
+      color: $white;
+      border-color: $brand-black;
+      background-color: $brand-black;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
