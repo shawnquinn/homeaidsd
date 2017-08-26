@@ -12,7 +12,6 @@
 a {
   color: $brand-primary;
 }
-
 // Header Styles
 
 .bg-blue {
@@ -29,7 +28,7 @@ a {
   height: auto;
 }
 // Navigation
-//
+
 nav {
   a {
     transition: all 0.27s ease;
@@ -47,7 +46,9 @@ nav {
     transition: all 0.27s ease;
     text-transform: normal;
     color: $white !important;
-    font-family: $font-body;
+    font-family: $font-header;
+    font-size: 14px;
+    letter-spacing: 2px;
     font-weight: 400;
 
     &:hover {
@@ -74,12 +75,12 @@ h6 {
 // Elements
 
 .btn {
+  padding: 1rem 3rem;
   text-transform: uppercase;
   border-radius: 5rem;
   font-family: $font-header;
   font-size: 18px;
   font-weight: 700;
-  padding: 1rem 3rem;
 
   &-primary {
     border-color: $brand-primary;
@@ -106,5 +107,22 @@ h6 {
 
   &:hover {
     cursor: pointer;
+  }
+}
+// Slider Hero - Owl Carousel
+.carousel-inner {
+  .carousel-item {
+    padding: 10rem 0;
+  }
+}
+
+.carousel-inner {
+  .carousel-item {
+    h1 {
+      span {
+        font-family: $font-secondary;
+        font-weight: 300;
+      }
+    }
   }
 }
