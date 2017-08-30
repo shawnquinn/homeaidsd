@@ -9,8 +9,17 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  color: $brand-black;
+  font-family: $font-body;
+}
+
 a {
   color: $brand-primary;
+
+  &:hover {
+    color: darken($brand-primary, 15%);
+  }
 }
 // Header Styles
 
@@ -24,8 +33,54 @@ a {
 
 .custom-logo-link img {
   width: 100%;
-  max-width: 400px;
+  max-width: 280px;
   height: auto;
+  @media screen and (max-width: 767px) {
+    max-width: 150px;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-basis: 18%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  & li {
+    display: inline-block;
+
+    & a {
+      margin-right: 1.25rem;
+      padding: 0.25rem;
+      color: $white !important;
+
+      &:hover {
+        opacity: 0.5;
+        color: $white !important;
+      }
+    }
+  }
+}
+
+.donate-involve {
+  display: flex;
+
+  & .btn {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1.15rem;
+    border: 0;
+    font-size: 12px;
+
+    & + .btn {
+      margin-right: 0;
+    }
+    @media screen and (max-width: 575px) {
+      margin: 0 0.15rem;
+      padding: 0.25rem 1rem;
+      font-size: 11px;
+    }
+  }
 }
 // Navigation
 
@@ -44,12 +99,20 @@ nav {
 
   & .secondary-nav a {
     transition: all 0.27s ease;
+    letter-spacing: 0;
     text-transform: normal;
     color: $white !important;
     font-family: $font-header;
     font-size: 14px;
-    letter-spacing: 2px;
-    font-weight: 400;
+    font-weight: 700;
+
+    &.nav-link {
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+      @media screen and (max-width: 991px) {
+        font-size: 12px !important;
+      }
+    }
 
     &:hover {
       opacity: 0.5;
@@ -57,9 +120,28 @@ nav {
   }
 }
 
-.navbar-expand-md .navbar-nav .nav-link {
-  padding-right: 1.75rem;
-  padding-left: 1.75rem;
+.navbar-expand-md .navbar-nav {
+  & .nav-link {
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+    @media screen and (max-width: 991px) {
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+      font-size: 14px;
+    }
+  }
+
+  &.secondary-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    text-transform: none;
+    font-size: 14px;
+    @media screen and (max-width: 991px) {
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+      font-size: 14px;
+    }
+  }
 }
 // Typography
 
@@ -109,19 +191,108 @@ h6 {
     cursor: pointer;
   }
 }
-// Slider Hero - Owl Carousel
+// Slider/Carousel Hero
+
+.carousel {
+  .carousel-control-next,
+  .carousel-control-prev {
+    transition: opacity 0.33s ease;
+    opacity: 0;
+    @include media-breakpoint-down(xs) {
+      bottom: 1rem;
+      align-items: flex-end;
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    .carousel-control-next,
+    .carousel-control-prev {
+      opacity: 1;
+    }
+  }
+}
+
 .carousel-inner {
-  .carousel-item {
-    padding: 10rem 0;
+  .container,
+  .row {
+    @include h-100;
+  }
+}
+
+.carousel-inner {
+  #slide-1 {
+    background: url("../img/slide-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    @include media-breakpoint-down(sm) {
+      background-position: 60% center;
+    }
+    @include media-breakpoint-down(xs) {
+      background-position: 65% center;
+    }
   }
 }
 
 .carousel-inner {
   .carousel-item {
+    height: 630px;
+    @include media-breakpoint-down(xs) {
+      height: 400px;
+
+      .container {
+        position: relative;
+        z-index: 4;
+      }
+
+      &::before {
+        position: absolute;
+        z-index: 3;
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: rgba($white, 0.5);
+      }
+    }
+
     h1 {
+      font-size: 72px;
+      @include media-breakpoint-down(lg) {
+        font-size: 54px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 42px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 33px;
+      }
+
+      &::after {
+        position: relative;
+        display: block;
+        width: 42%;
+        height: 5px;
+        margin-top: 2rem;
+        content: '';
+        background-color: $brand-primary;
+        @include media-breakpoint-down(xs) {
+          margin: 2rem auto 0;
+        }
+      }
+
       span {
         font-family: $font-secondary;
         font-weight: 300;
+      }
+    }
+
+    p {
+      margin: 2rem 0 0;
+      font-size: 22px;
+      @media screen and (max-width: 991px) {
+        font-size: 18px;
       }
     }
   }

@@ -17,29 +17,16 @@
 
 				<div id="slide-1" class="widget_text carousel-item">
 					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<h1>Mission <span>&amp;</span> Vision</h1>
-							</div>
-						</div>
-					</div>
-				</div>
+						<div class="row align-items-center">
+							<div class="col-sm-7">
+								<h1 class="text-center text-sm-left"><?php echo esc_html_e('Mission ', 'understrap') ?><span>&amp;</span><?php echo esc_html_e(' Vision', 'understrap') ?></h1>
+								<p class="text-center text-sm-left"><?php echo esc_html_e('Building new lives for homeless families and individuals through housing and community outreach.', 'understrap') ?></p>
 
-				<div id="slide-2" class="widget_text carousel-item">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<h1>Sherman <span>&amp;</span></h1>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div id="slide-2" class="widget_text carousel-item">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<h1>Sherman <span>&amp;</span></h1>
+								<div class="row mt-5">
+									<div class="col-lg-6">
+										<button class="btn btn-lg btn-primary btn-block" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Donate Today ') ?><i class="fa fa-heart fa-lg pl-2"></i></button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -66,5 +53,5 @@
 		</div><!-- .carousel -->
 
 <script>
-jQuery( ".carousel-item" ).first().addClass( "active" );
+	jQuery( ".carousel-item" ).first().addClass( "active" );
 </script>

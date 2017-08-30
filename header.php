@@ -73,6 +73,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				); ?>
+
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
@@ -82,7 +83,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- .wrapper-navbar end -->
 
 	<!-- ******************* The Secondary Navbar Area ******************* -->
-	<div class="wrapper-fluid wrapper-navbar d-none d-md-block " id="wrapper-navbar-secondary">
+	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar-secondary">
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
@@ -97,7 +98,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php wp_nav_menu(
 					array(
 						'theme_location' 	=> 'secondary',
-						'container_class' => 'navbar-collapse justify-content-center',
+						'container_class' => 'navbar-collapse justify-content-center d-none d-md-block ',
 						'container_id'    => 'navbarNavNoDropdown',
 						'menu_class' 			=> 'navbar-nav secondary-nav',
 						'fallback_cb'     => '',
@@ -105,6 +106,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				);?>
+
+				<ul class="social-media justify-content-center">
+					<li><a href="<?php echo esc_url('#'); ?>" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+					<li><a href="<?php echo esc_url('#'); ?>" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+					<li><a href="<?php echo esc_url('#'); ?>" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
+				</ul>
+
+				<div class="donate-involve">
+					<button class="btn btn-lg btn-secondary btn-block" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'Donate',
+					'understrap' ); ?></button> <button class="btn btn-lg btn-secondary btn-block" href="<?php echo esc_url( home_url( '/' ) ) ?>"><?php esc_html_e( 'Get Involved',
+					'understrap' ); ?></button>
+				</div>
 
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
