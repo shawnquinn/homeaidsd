@@ -18,7 +18,7 @@ var browserSyncWatchFiles = [
 // browser-sync options
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
-    proxy: "localhost/wordpress/",
+    proxy: "localhost:8888/sandbox/",
     notify: false
 };
 
@@ -223,6 +223,9 @@ gulp.task('scripts', function() {
         // End - All BS4 stuff
 
         basePaths.dev + 'js/skip-link-focus-fix.js',
+
+        // Any Custom JavaScript
+        basePaths.dev + 'js/wow.js',
 
         // Any Custom JavaScript
         basePaths.dev + 'js/custom.js'

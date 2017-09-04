@@ -297,3 +297,56 @@ h6 {
     }
   }
 }
+
+
+/*
+// Homepage Sections
+*/
+
+.home-page section {
+  padding: 4rem 0;
+}
+
+#welcome {
+  h2 {
+    font-size: 52px;
+  }
+}
+
+.content-box {
+  &:first-child {
+    padding-bottom: 6rem;
+  }
+  .icon {
+    background-color: #fff;
+    border: 3px solid lighten($brand-black, 65%);
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    transition: all 0.33s ease;
+    i {
+      font-size: 54px;
+      color: $brand-primary;
+      transition: all 0.33s ease;
+    }
+    &:hover {
+      background-color: $brand-primary;
+      border: 3px solid $brand-primary;
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+  .content {
+    h4 {
+      font-size: 21px;
+    }
+
+    p {
+      color: lighten($brand-black, 30%);
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}

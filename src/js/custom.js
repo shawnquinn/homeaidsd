@@ -1,11 +1,7 @@
-(function ($) {
-  $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
+// Custom JavaScript File
+new WOW().init();
 
-      if (scroll >= 1) {
-          $("#wrapper-navbar").addClass("");
-      } else {
-          $("#wrapper-navbar").removeClass("");
-      }
-  });
-})(jQuery);
+( function( $ ) {
+
+
+} )( jQuery );
