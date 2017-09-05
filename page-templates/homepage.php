@@ -52,12 +52,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<section id="welcome" class="container">
 			<div class="row">
-				<div class="col-12">
-					<h2 class="text-center mb-5 wow fadeIn"><?php echo esc_html_e('Needs Meet Opportunity', 'understrap') ?></h2>
-					<p class="lead text-center my-3"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.', 'understrap') ?></p>
+				<div class="col-12 wow fadeIn" data-wow-offset="150">
+					<h2 class="section-title text-center"><?php echo esc_html_e('Needs Meet Opportunity', 'understrap') ?></h2>
+					<p class="section-lead lead text-center"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.', 'understrap') ?></p>
 				</div>
 			</div>
-			<div class="row align-items-center pt-3 pb-5 my-3">
+			<div class="row align-items-center pt-3 pb-5 my-3 wow fadeIn" data-wow-offset="230">
 				<div class="col-md-4">
 						<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/home-hand-icon.png" alt="<?php echo esc_html_e('Needs Meet Opportunity', 'understrap') ?>">
 				</div>
@@ -112,6 +112,35 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<button class="btn btn-lg btn-primary btn-block" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Get Involved', 'understrap') ?></button>
 				</div>
 			</div>
+	</section><!-- Section #Welcome end -->
+
+	<section id="providers" class="container-fluid">
+		<div class="row">
+			<div class="img-contain col-md-6 pl-0 d-none d-md-block wow fadeInLeft" data-wow-duration="2.33s"></div>
+			<div class="col-md-6 py-5 wow fadeInRight">
+					<div class="content">
+						<h3><?php echo esc_html_e('Service Providers', 'understrap'); ?></h3>
+						<p><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis a ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'understrap'); ?></p>
+
+						<div class="row pt-4">
+							<div class="col-lg-6">
+								<button class="btn btn-md btn-primary btn-block" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Learn More', 'understrap') ?></button>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="latest-causes">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h3 class="text-center section-title"><?php echo esc_html_e('Our Latest Causes', 'understrap'); ?></h3>
+					<p class="section-lead lead text-center"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 'understrap'); ?></p>
+				</div>
+			</div>
+		</div>
 	</section>
 
 </div><!-- Wrapper end -->
