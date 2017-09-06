@@ -303,10 +303,8 @@ h6 {
   }
 }
 /*
-// Homepage Sections
+// Homepage Section
 */
-//HomePage
-
 .home-page section {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -372,9 +370,11 @@ h6 {
     }
   }
 }
+/*
 // Providers
-
+*/
 #providers {
+  overflow: hidden;
   padding-top: 0;
   padding-bottom: 0;
   background-color: lighten($brand-black, 70%);
@@ -409,10 +409,44 @@ h6 {
   width: 100%;
   height: 100%;
 }
+/*
 // Latest Causes
-
+*/
 #latest-causes {
+  overflow: hidden;
+
   h3 {
     font-size: 48px;
+  }
+}
+
+.causes {
+  h4 {
+    margin: 1rem 0;
+    padding: 0;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 2;
+    color: lighten($brand-black, 25%);
+  }
+
+  a.read-more {
+    font-family: $font-header;
+    font-size: 16px;
+    transition: all 0.33s ease;
+    text-transform: uppercase;
+
+    &::after {
+      display: inline-block;
+      padding-left: 0.25rem;
+      content: ' »';
+      transition: all 0.33s ease;
+    }
+
+    &:hover::after {
+      padding-left: 0.5rem;
+    }
   }
 }

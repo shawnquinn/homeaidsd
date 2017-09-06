@@ -11,6 +11,7 @@ get_header();
 
 ?>
 
+
 <?php get_template_part('home-hero'); ?>
 
 <?php
@@ -50,6 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- Container end -->
 
+	<!-- ******************* The Welcome Area ******************* -->
 	<section id="welcome" class="container">
 			<div class="row">
 				<div class="col-12 wow fadeIn" data-wow-offset="150">
@@ -114,6 +116,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 	</section><!-- Section #Welcome end -->
 
+	<!-- ******************* The Providers Area ******************* -->
 	<section id="providers" class="container-fluid">
 		<div class="row">
 			<div class="img-contain col-md-6 pl-0 d-none d-md-block wow fadeInLeft" data-wow-duration="2.33s"></div>
@@ -132,12 +135,42 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</section>
 
+	<!-- ******************* The Latest Causes Area ******************* -->
 	<section id="latest-causes">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<h3 class="text-center section-title"><?php echo esc_html_e('Our Latest Causes', 'understrap'); ?></h3>
 					<p class="section-lead lead text-center"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 'understrap'); ?></p>
+				</div>
+			</div>
+
+			<div class="row align-items-center py-5 causes">
+				<div class="col-md-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">
+					<a class="d-block" href="<?php echo esc_url( home_url('/') ); ?>">
+						<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/causes/c1.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
+					</a>
+					<h4><?php echo esc_html_e('Alpha Sqaure', 'understrap') ?></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+					<a class="read-more" href="<?php echo esc_url( home_url('') ) ?>"><?php echo esc_html_e('Learn More', 'understrap') ?></a>
+				</div>
+
+				<div class="col-md-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">
+					<a class="d-block" href="<?php echo esc_url( home_url('/') ); ?>">
+						<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/causes/c2.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
+					</a>
+					<h4><?php echo esc_html_e('Memory-Care Homes', 'understrap') ?></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+					<a class="read-more" href="<?php echo esc_url( home_url('') ) ?>"><?php echo esc_html_e('Learn More', 'understrap') ?></a>
+				</div>
+
+				<div class="col-md-4 wow fadeInRight" data-wow-duration="1.5s" data-wow-offset="200">
+					<a class="d-block" href="<?php echo esc_url( home_url('/') ); ?>">
+						<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/causes/c3.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
+					</a>
+					<h4><?php echo esc_html_e('Veteran\'s Resource Center', 'understrap') ?></h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+					<a class="read-more" href="<?php echo esc_url( home_url('') ) ?>"><?php echo esc_html_e('Learn More', 'understrap') ?></a>
 				</div>
 			</div>
 		</div>

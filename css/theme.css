@@ -13094,7 +13094,7 @@ h6 {
         font-size: 18px; } }
 
 /*
-// Homepage Sections
+// Homepage Section
 */
 .home-page section {
   padding-top: 4rem;
@@ -13140,7 +13140,11 @@ h6 {
   font-weight: 600;
   color: #8c8c8e; }
 
+/*
+// Providers
+*/
 #providers {
+  overflow: hidden;
   padding-top: 0;
   padding-bottom: 0;
   background-color: #f3f3f3; }
@@ -13167,8 +13171,37 @@ h6 {
   width: 100%;
   height: 100%; }
 
-#latest-causes h3 {
-  font-size: 48px; }
+/*
+// Latest Causes
+*/
+#latest-causes {
+  overflow: hidden; }
+  #latest-causes h3 {
+    font-size: 48px; }
+
+.causes h4 {
+  margin: 1rem 0;
+  padding: 0; }
+
+.causes p {
+  font-size: 14px;
+  line-height: 2;
+  color: #7f7f81; }
+
+.causes a.read-more {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  -webkit-transition: all 0.33s ease;
+  transition: all 0.33s ease;
+  text-transform: uppercase; }
+  .causes a.read-more::after {
+    display: inline-block;
+    padding-left: 0.25rem;
+    content: ' »';
+    -webkit-transition: all 0.33s ease;
+    transition: all 0.33s ease; }
+  .causes a.read-more:hover::after {
+    padding-left: 0.5rem; }
 
 /*
 * Use existing Bootstrap 4 classes and
