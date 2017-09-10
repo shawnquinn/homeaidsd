@@ -51,7 +51,3 @@
 			</a>
 
 		</div><!-- .carousel -->
-
-<script>
-	jQuery( ".carousel-item" ).first().addClass( "active" );
-</script>

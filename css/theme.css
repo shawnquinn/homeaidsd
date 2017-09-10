@@ -13093,6 +13093,19 @@ h6 {
       .carousel-inner .carousel-item p {
         font-size: 18px; } }
 
+#testimonials .carousel-inner .carousel-item {
+  z-index: 3;
+  height: 550px; }
+
+#testimonials .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0); }
+  #testimonials .carousel-indicators li.active {
+    background-color: white; }
+
 /*
 // Homepage Section
 */
@@ -13202,6 +13215,50 @@ h6 {
     transition: all 0.33s ease; }
   .causes a.read-more:hover::after {
     padding-left: 0.5rem; }
+
+/*
+// Testimonials
+*/
+#testimonials {
+  overflow: hidden;
+  background-color: #169BBF; }
+  #testimonials h3 {
+    font-size: 48px;
+    color: #ffffff; }
+
+#testimonials .carousel-inner .carousel-item {
+  z-index: 3;
+  height: 333px; }
+
+#testimonials .carousel-indicators {
+  bottom: 0; }
+
+#testimonials .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0); }
+  #testimonials .carousel-indicators li.active {
+    background-color: white; }
+
+#testimonials blockquote {
+  font-size: 20px;
+  font-style: italic;
+  line-height: 2rem;
+  color: #ffffff; }
+  #testimonials blockquote .author {
+    font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    font-style: normal;
+    display: block;
+    margin-top: 2rem; }
+    #testimonials blockquote .author span {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      display: block;
+      text-transform: uppercase; }
 
 /*
 * Use existing Bootstrap 4 classes and

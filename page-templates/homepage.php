@@ -176,6 +176,49 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</section>
 
+<!-- ******************* The Testimonials Area ******************* -->
+	<section id="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h3 class="text-center section-title"><?php echo esc_html_e('What People Are Saying', 'understrap'); ?></h3>
+				</div>
+			</div>
+		</div>
+
+		<div id="carouselQuotes" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+		    <li data-target="#carouselQuotes" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselQuotes" data-slide-to="1"></li>
+		  </ol>
+			<div class="carousel-inner" role="listbox">
+
+				<div id="quote-1" class="widget_text carousel-item active">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-sm-7 mx-auto">
+								<blockquote class="text-center"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.', 'understrap') ?> <span class="author"><?php echo esc_html_e('Jane Doe', 'understrap') ?> <span><?php echo esc_html_e('Sponsor', 'understrap') ?></span></span></blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="quote-2" class="widget_text carousel-item">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-sm-7 mx-auto">
+								<blockquote class="text-center"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.', 'understrap') ?> <span class="author"><?php echo esc_html_e('Jane Doe', 'understrap') ?> <span><?php echo esc_html_e('Sponsor', 'understrap') ?></span></span></blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div><!-- .carousel -->
+
+	</section>
+
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>
