@@ -13290,9 +13290,91 @@ h6 {
 // Latest News
 */
 #news {
-  background-color: #f3f3f3; }
+  background-color: #f3f3f3;
+  position: relative;
+  overflow: hidden; }
   #news h3 {
     font-size: 48px; }
+
+.post-featured {
+  position: relative; }
+  .post-featured .overlay-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 3rem; }
+
+.post-latest {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #169BBF; }
+  .post-latest:first-child {
+    padding-top: 0; }
+  .post-latest:last-child {
+    border: 0; }
+  .post-latest .image-thumb {
+    padding-right: 2rem; }
+    .post-latest .image-thumb img {
+      width: 80%;
+      height: auto; }
+  .post-latest .post-article a h4 {
+    color: #404041;
+    font-size: 17px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .post-latest .post-article a:hover h4 {
+    color: #169BBF; }
+
+/*
+// Sponsors
+*/
+#sponsors {
+  overflow: hidden; }
+  #sponsors h3 {
+    font-size: 48px; }
+    #sponsors h3 span {
+      font-family: "Libre Baskerville", serif;
+      font-style: italic;
+      font-weight: 300; }
+  #sponsors .mission p {
+    font-size: 14px;
+    line-height: 2;
+    color: #7f7f81; }
+  #sponsors #accordion .card {
+    margin-bottom: 1rem;
+    border: 0; }
+    #sponsors #accordion .card h5 a {
+      display: block;
+      padding: .75rem 1.25rem;
+      border-radius: 30px;
+      background-color: #169BBF;
+      color: #fff;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      #sponsors #accordion .card h5 a.collapsed {
+        background-color: #ffffff;
+        color: #169BBF; }
+        #sponsors #accordion .card h5 a.collapsed:hover {
+          color: #0d586d; }
+      #sponsors #accordion .card h5 a:hover {
+        text-decoration: none;
+        color: #ffffff; }
+    #sponsors #accordion .card .card-header {
+      background-color: #ffffff;
+      border-radius: 30px;
+      border: 1px solid #169BBF;
+      padding: 0; }
+    #sponsors #accordion .card .card-body {
+      padding: 0 0 0 1.25rem;
+      margin: 1.25rem;
+      margin-left: 1.75rem;
+      border-left: 2px solid silver; }
+
+/*
+// Donate
+*/
+#donate {
+  padding: 1rem 0; }
 
 /*
 * Use existing Bootstrap 4 classes and

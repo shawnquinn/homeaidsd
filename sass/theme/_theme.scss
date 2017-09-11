@@ -567,7 +567,122 @@ h6 {
 
 #news {
   background-color: lighten($brand-black, 70%);
+  position: relative;
+  overflow: hidden;
   h3 {
     font-size: 48px;
   }
+}
+
+.post-featured {
+  position: relative;
+  .overlay-box {
+    background-color: rgba($white, 0.85);
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 3rem;
+  }
+}
+
+.post-latest {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $brand-primary;
+  &:first-child {
+    padding-top: 0;
+  }
+  &:last-child {
+    border: 0;
+  }
+  .image-thumb {
+    padding-right: 2rem;
+    img {
+      width: 80%;
+      height: auto;
+    }
+  }
+  .post-article {
+    a {
+      & h4 {
+        color: $brand-black;
+        font-size: 17px;
+        transition: all 0.3s ease;
+      }
+
+      &:hover h4 {
+        color: $brand-primary;
+      }
+    }
+  }
+}
+
+/*
+// Sponsors
+*/
+
+#sponsors {
+  overflow: hidden;
+  h3 {
+    font-size: 48px;
+    span {
+      font-family: $font-secondary;
+      font-style: italic;
+      font-weight: 300;
+    }
+  }
+  .mission {
+    p {
+      font-size: 14px;
+      line-height: 2;
+      color: lighten($brand-black, 25%);
+    }
+  }
+
+  #accordion {
+    .card {
+      margin-bottom: 1rem;
+      border: 0;
+      h5 {
+        a {
+          display: block;
+          padding: .75rem 1.25rem;
+          border-radius: 30px;
+          background-color: $brand-primary;
+          color: #fff;
+          transition: all 0.3s ease;
+          &.collapsed {
+            background-color: $white;
+            color: $brand-primary;
+            &:hover {
+              color: darken($brand-primary, 18%);
+            }
+          }
+          &:hover {
+            text-decoration: none;
+            color: $white;
+          }
+        }
+      }
+      .card-header {
+        background-color:$white;
+          border-radius: 30px;
+          border: 1px solid $brand-primary;
+          padding: 0;
+      }
+      .card-body {
+        padding: 0 0 0 1.25rem;
+        margin: 1.25rem;
+        margin-left: 1.75rem;
+        border-left: 2px solid lighten($brand-black, 50%);
+      }
+    }
+  }
+}
+
+/*
+// Donate
+*/
+
+#donate {
+  padding: 1rem 0;
 }
