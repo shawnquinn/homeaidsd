@@ -13221,7 +13221,8 @@ h6 {
 */
 #testimonials {
   overflow: hidden;
-  background-color: #169BBF; }
+  background: url("../img/bg-reviews.jpg") center center no-repeat;
+  background-size: cover; }
   #testimonials h3 {
     font-size: 48px;
     color: #ffffff; }
@@ -13231,7 +13232,8 @@ h6 {
   height: 333px; }
 
 #testimonials .carousel-indicators {
-  bottom: 0; }
+  bottom: 0;
+  margin-bottom: 0; }
 
 #testimonials .carousel-indicators li {
   width: 10px;
@@ -13243,22 +13245,54 @@ h6 {
     background-color: white; }
 
 #testimonials blockquote {
-  font-size: 20px;
+  font-size: 24px;
   font-style: italic;
-  line-height: 2rem;
+  line-height: 2.75rem;
   color: #ffffff; }
-  #testimonials blockquote .author {
-    font-family: "Roboto Slab", serif;
-    font-size: 24px;
-    font-style: normal;
+  #testimonials blockquote::after, #testimonials blockquote::before {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-top: -1.5rem;
+    content: '';
+    background: url("../img/quote-left.png") no-repeat;
+    background-position: 0 bottom;
+    background-size: 100%; }
+  #testimonials blockquote::after {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-top: 0;
+    content: '';
+    background: url("../img/quote-right.png") no-repeat;
+    background-position: 0 bottom;
+    background-size: 100%; }
+
+.author {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  font-style: normal;
+  display: block;
+  margin-top: 1.5rem;
+  color: #fff; }
+  .author span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
     display: block;
-    margin-top: 2rem; }
-    #testimonials blockquote .author span {
-      font-family: "Open Sans", sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      display: block;
-      text-transform: uppercase; }
+    text-transform: uppercase; }
+
+/*
+// Latest News
+*/
+#news {
+  background-color: #f3f3f3; }
+  #news h3 {
+    font-size: 48px; }
 
 /*
 * Use existing Bootstrap 4 classes and
