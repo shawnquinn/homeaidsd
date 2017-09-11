@@ -116,24 +116,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 	</section><!-- Section #Welcome end -->
 
-	<!-- ******************* The Providers Area ******************* -->
-	<section id="providers" class="container-fluid">
-		<div class="row">
-			<div class="img-contain col-md-6 pl-0 d-none d-md-block wow fadeInLeft" data-wow-duration="2.33s"></div>
-			<div class="col-md-6 py-5 wow fadeInRight">
-					<div class="content">
-						<h3><?php echo esc_html_e('Service Providers', 'understrap'); ?></h3>
-						<p><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis a ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'understrap'); ?></p>
 
-						<div class="row pt-4">
-							<div class="col-lg-6">
-								<button class="btn btn-md btn-primary btn-block" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Learn More', 'understrap') ?></button>
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
-	</section>
 
 	<!-- ******************* The Latest Causes Area ******************* -->
 	<section id="latest-causes">
@@ -175,6 +158,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 	</section>
+
+	<!-- ******************* The Providers Area ******************* -->
+	<section id="providers" class="container-fluid">
+		<div class="row">
+			<div class="img-contain col-md-6 pl-0 d-none d-md-block wow fadeInLeft" data-wow-duration="2.33s"></div>
+			<div class="col-md-6 py-5 wow fadeInRight">
+					<div class="content">
+						<h3><?php echo esc_html_e('Service Providers', 'understrap'); ?></h3>
+						<p><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis a ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'understrap'); ?></p>
+
+						<div class="row pt-4">
+							<div class="col-lg-6">
+								<button class="btn btn-md btn-primary btn-block" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Learn More', 'understrap') ?></button>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+	<!-- ******************* zEND Providers Area ******************* -->
 
 <!-- ******************* The Testimonials Area ******************* -->
 	<section id="testimonials">
