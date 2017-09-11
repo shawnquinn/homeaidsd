@@ -9,6 +9,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
+::selection {
+    color: $white;
+    background: darken($brand-primary, 5%);
+}
+
 body {
   font-family: $font-body;
   color: $brand-black;
@@ -475,7 +480,7 @@ h6 {
 */
 #testimonials {
   overflow: hidden;
-  background: url("../img/bg-reviews.jpg") center center no-repeat;
+  background: url('../img/bg-reviews.jpg') center center no-repeat;
   background-size: cover;
 
   h3 {
@@ -524,7 +529,7 @@ h6 {
       height: 50px;
       margin-top: -1.5rem;
       content: '';
-      background: url("../img/quote-left.png") no-repeat;
+      background: url('../img/quote-left.png') no-repeat;
       background-position: 0 bottom;
       background-size: 100%;
     }
@@ -537,7 +542,7 @@ h6 {
       height: 50px;
       margin-top: 0;
       content: '';
-      background: url("../img/quote-right.png") no-repeat;
+      background: url('../img/quote-right.png') no-repeat;
       background-position: 0 bottom;
       background-size: 100%;
     }
@@ -560,15 +565,14 @@ h6 {
     text-transform: uppercase;
   }
 }
-
 /*
 // Latest News
 */
-
 #news {
-  background-color: lighten($brand-black, 70%);
   position: relative;
   overflow: hidden;
+  background-color: lighten($brand-black, 70%);
+
   h3 {
     font-size: 48px;
   }
@@ -576,11 +580,12 @@ h6 {
 
 .post-featured {
   position: relative;
+
   .overlay-box {
-    background-color: rgba($white, 0.85);
     position: absolute;
     bottom: 0;
     padding: 1rem 3rem;
+    background-color: rgba($white, .85);
   }
 }
 
@@ -588,25 +593,30 @@ h6 {
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid $brand-primary;
+
   &:first-child {
     padding-top: 0;
   }
+
   &:last-child {
     border: 0;
   }
+
   .image-thumb {
     padding-right: 2rem;
+
     img {
       width: 80%;
       height: auto;
     }
   }
+
   .post-article {
     a {
       & h4 {
-        color: $brand-black;
         font-size: 17px;
         transition: all 0.3s ease;
+        color: $brand-black;
       }
 
       &:hover h4 {
@@ -615,21 +625,22 @@ h6 {
     }
   }
 }
-
 /*
 // Sponsors
 */
-
 #sponsors {
   overflow: hidden;
+
   h3 {
     font-size: 48px;
+
     span {
       font-family: $font-secondary;
-      font-style: italic;
       font-weight: 300;
+      font-style: italic;
     }
   }
+
   .mission {
     p {
       font-size: 14px;
@@ -642,47 +653,86 @@ h6 {
     .card {
       margin-bottom: 1rem;
       border: 0;
+
       h5 {
+        font-family: $font-body;
+        font-weight: 300;
+
         a {
           display: block;
-          padding: .75rem 1.25rem;
+          padding: 0.75rem 1.25rem;
+          transition: all 0.3s ease;
+          color: #fff;
           border-radius: 30px;
           background-color: $brand-primary;
-          color: #fff;
-          transition: all 0.3s ease;
+
+          .plus-minus {
+            float: right;
+          }
+
           &.collapsed {
-            background-color: $white;
             color: $brand-primary;
+            background-color: $white;
+
             &:hover {
               color: darken($brand-primary, 18%);
             }
           }
+
           &:hover {
             text-decoration: none;
             color: $white;
           }
         }
       }
+
       .card-header {
-        background-color:$white;
-          border-radius: 30px;
-          border: 1px solid $brand-primary;
-          padding: 0;
+        padding: 0;
+        border: 1px solid $brand-primary;
+        border-radius: 30px;
+        background-color: $white;
       }
+
       .card-body {
+        margin: 1.25rem 1.25rem 1.25rem 1.75rem;
         padding: 0 0 0 1.25rem;
-        margin: 1.25rem;
-        margin-left: 1.75rem;
         border-left: 2px solid lighten($brand-black, 50%);
       }
     }
   }
 }
-
 /*
 // Donate
 */
-
 #donate {
   padding: 1rem 0;
+}
+/*
+// Footer info
+*/
+#wrapper-footer {
+  background-color: $brand-primary;
+  color: #fff;
+  img.footer-logo {
+    width: 200px;
+    height: auto;
+  }
+  address {
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .navbar-nav {
+    display: block;
+    text-align: center;
+    li.nav-item {
+      display: inline-block;
+      margin: 0 1rem;
+    }
+    .nav-link {
+      font-family: $font-header;
+      color: #fff;
+    }
+  }
 }

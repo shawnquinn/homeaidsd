@@ -13,9 +13,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_sidebar( 'footerfull' ); ?>
 
+
+
 <div class="wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_attr( $container ); ?>">
+
+		<div class="row">
+			<div class="col-12">
+				<img class="footer-logo img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/logo-white.png" alt="<?php echo esc_html_e('HomeAid San Diego', 'understrap') ?>">
+				<address class="homeaid text-center">
+					6960 Flanders Dr., San Diego, CA 92121 | (858) 793-6292	|	info@homeaidsd.org
+				</address>
+			</div>
+		</div>
 
 		<div class="row">
 
@@ -23,7 +34,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
-					<div class="site-info text-center">
+					<?php wp_nav_menu(
+						array(
+							'theme_location'  => 'footer',
+							'container_class' => 'justify-content-center',
+							'container_id'    => 'navbarNavDropdown',
+							'menu_class'      => 'navbar-nav',
+							'fallback_cb'     => '',
+							'menu_id'         => 'footer-menu',
+							'walker'          => new WP_Bootstrap_Navwalker(),
+						)
+					); ?>
+
+
+					<div class="site-info text-center" hidden>
 
 							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf(
 							/* translators:*/

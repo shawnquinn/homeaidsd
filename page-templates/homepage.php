@@ -243,8 +243,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				  <div class="card wow fadeInUp" data-wow-offset="200">
 				    <div class="card-header" role="tab" id="headingOne">
 				      <h5 class="mb-0">
-				        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				          <i class="fa fa-home" aria-hidden="true"></i> Section 1
+				        <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				          <i class="fa fa-home" aria-hidden="true"></i> Section 1 <span class="plus-minus"><i class="fa fa-plus fa-minus" aria-hidden="true"></i></span>
 				        </a>
 				      </h5>
 				    </div>
@@ -259,7 +259,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				    <div class="card-header" role="tab" id="headingTwo">
 				      <h5 class="mb-0">
 				        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				          <i class="fa fa-bank" aria-hidden="true"></i> Section 2
+				          <i class="fa fa-bank" aria-hidden="true"></i> Section 2 <span class="plus-minus"><i class="fa fa-plus" aria-hidden="true"></i></span>
 				        </a>
 				      </h5>
 				    </div>
@@ -273,7 +273,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				    <div class="card-header" role="tab" id="headingThree">
 				      <h5 class="mb-0">
 				        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									<i class="fa fa-anchor" aria-hidden="true"></i> Section 3
+									<i class="fa fa-anchor" aria-hidden="true"></i> Section 3 <span class="plus-minus"><i class="fa fa-plus" aria-hidden="true"></i></span>
 				        </a>
 				      </h5>
 				    </div>
