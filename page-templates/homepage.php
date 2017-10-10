@@ -11,7 +11,6 @@ get_header();
 
 ?>
 
-
 <?php get_template_part('home-hero'); ?>
 
 <?php
@@ -177,7 +176,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 		</div>
 	</section>
-	<!-- ******************* zEND Providers Area ******************* -->
+	<!-- ******************* END Providers Area ******************* -->
 
 <!-- ******************* The Testimonials Area ******************* -->
 	<section id="testimonials">

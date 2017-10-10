@@ -32,6 +32,10 @@ a {
   background-color: $brand-primary;
 }
 
+.bg-blue-gradient {
+  background: linear-gradient(to left, darken($brand-primary, 12%) , $brand-primary);
+}
+
 .bg-light {
   background-color: $white !important;
 }

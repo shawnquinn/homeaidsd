@@ -12883,6 +12883,11 @@ a {
 .bg-blue {
   background-color: #169BBF; }
 
+.bg-blue-gradient {
+  background: -webkit-gradient(linear, right top, left top, from(#106e88), to(#169BBF));
+  background: -webkit-linear-gradient(right, #106e88, #169BBF);
+  background: linear-gradient(to left, #106e88, #169BBF); }
+
 .bg-light {
   background-color: #ffffff !important; }
 

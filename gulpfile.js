@@ -221,10 +221,12 @@ gulp.task('scripts', function() {
         basePaths.dev + 'js/bootstrap4/bootstrap.js',
 
         // End - All BS4 stuff
-
         basePaths.dev + 'js/skip-link-focus-fix.js',
 
-        // Any Custom JavaScript
+        // Materialize JS
+        basePaths.dev + 'js/materialize.min.js',
+
+        // WOW js
         basePaths.dev + 'js/wow.js',
 
         // Any Custom JavaScript
