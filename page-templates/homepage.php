@@ -50,11 +50,177 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- Container end -->
 
+	<!-- ******************* The Latest Causes Area ******************* -->
+	<section id="latest-causes">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h3 class="text-center section-title"><?php echo esc_html_e('Our Latest Causes', 'understrap'); ?></h3>
+					<p class="section-lead lead text-center"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 'understrap'); ?></p>
+				</div>
+			</div>
+
+			<div class="row align-items-center py-5 causes">
+				<div class="col-md-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">
+					<div class="inner-box">
+						<a class="d-block" href="<?php echo esc_url( home_url('/') ); ?>">
+							<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/causes/c1.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
+						</a>
+						<div class="content-box">
+							<h4><?php echo esc_html_e('Alpha Sqaure', 'understrap') ?></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+							<a class="read-more" href="<?php echo esc_url( home_url('') ) ?>"><?php echo esc_html_e('Learn More', 'understrap') ?></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">
+					<div class="inner-box">
+						<a class="d-block" href="<?php echo esc_url( home_url('/') ); ?>">
+							<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/causes/c2.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
+						</a>
+						<div class="content-box">
+							<h4><?php echo esc_html_e('Memory-Care Homes', 'understrap') ?></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+							<a class="read-more" href="<?php echo esc_url( home_url('') ) ?>"><?php echo esc_html_e('Learn More', 'understrap') ?></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 wow fadeInRight" data-wow-duration="1.5s" data-wow-offset="200">
+					<div class="inner-box">
+						<a class="d-block" href="<?php echo esc_url( home_url('/') ); ?>">
+							<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/causes/c3.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
+						</a>
+						<div class="content-box">
+							<h4><?php echo esc_html_e('Veteran\'s Resource Center', 'understrap') ?></h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+							<a class="read-more" href="<?php echo esc_url( home_url('') ) ?>"><?php echo esc_html_e('Learn More', 'understrap') ?></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ******************* The Latest News ******************* -->
+	<section id="news">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h3 class="text-center section-title wow fadeIn" date-wow-offset="200"><?php echo esc_html_e('Our Latest News', 'understrap'); ?></h3>
+					<p class="section-lead lead text-center wow fadeIn" data-wow-duration="2s" data-wow-offset="200"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.', 'understrap'); ?></p>
+				</div>
+			</div>
+
+			<div class="row my-5">
+				<div class="col-md-5">
+						<div class="post-featured wow fadeIn" data-wow-offset="200" data-wow-duration="2s">
+							<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/post-featured.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
+							<div class="overlay-box text-center">
+								<h4>Homes Fore the Homeless Golf Tournament 2017</h4>
+								<p>Aug 25th, 2017 |	NEWS | <a href="#">EVENTS</a></p>
+								<button class="btn btn-md btn-primary btn-block" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Read More', 'understrap') ?></button>
+							</div>
+						</div>
+				</div>
+
+				<div class="col-md-7">
+					<div class="post-latest d-flex wow fadeInRight" data-wow-offset="200">
+						<div class="image-thumb">
+							<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/post-thmb-1.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
+						</div>
+						<div class="post-article">
+							<a href="#"><h4>‘Homes Fore the Homeless’ Golf Tournament 2017</h4></a>
+							<p>Aug 25th, 2017	|	NEWS	|	EVENTS</p>
+							<a href="#">Read More »</a>
+						</div>
+					</div>
+
+					<div class="post-latest d-flex wow fadeInRight" data-wow-offset="200">
+						<div class="image-thumb">
+							<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/post-thmb-2.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
+						</div>
+						<div class="post-article">
+							<a href="#"><h4>Gold Nugget Win at PCBC for HomeAid San Diego</h4></a>
+							<p>Sept 14th, 2017	|	NEWS	|	EVENTS</p>
+							<a href="#">Read More »</a>
+						</div>
+					</div>
+
+					<div class="post-latest d-flex wow fadeInRight" data-wow-offset="200">
+						<div class="image-thumb">
+							<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/post-thmb-3.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
+						</div>
+						<div class="post-article">
+							<a href="#"><h4>"Rey of Hope" - 15 Year Celebration</h4></a>
+							<p>Oct 27th, 2017	|	NEWS	|	EVENTS</p>
+							<a href="#">Read More »</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ******************* The Providers Area ******************* -->
+	<section id="providers" class="container-fluid">
+		<div class="row">
+			<div class="img-contain col-md-6 pl-0 d-none d-md-block wow fadeInLeft" data-wow-duration="2.33s"></div>
+			<div class="col-md-6 py-5 wow fadeInRight">
+					<div class="content">
+						<h3><?php echo esc_html_e('Service Providers', 'understrap'); ?></h3>
+						<p><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis a ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'understrap'); ?></p>
+
+						<div class="row pt-4">
+							<div class="col-lg-6">
+								<button class="btn btn-md btn-primary btn-block" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Learn More', 'understrap') ?></button>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+	<!-- ******************* END Providers Area ******************* -->
+
+	<!-- ******************* The Sponsors Area ******************* -->
+	<section id="sponsors">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h3 class="text-center section-title wow fadeIn" date-wow-offset="200">Our Sponsors <span>&amp;</span> Partners</h3>
+					<p class="section-lead lead text-center wow fadeIn" data-wow-duration="2s" data-wow-offset="200"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.', 'understrap'); ?></p>
+				</div>
+			</div>
+
+			<div class="row pt-4">
+				<div class="logos col-md-6">
+					<h4 class="wow fadeIn" data-wow-offset="200">Our Sponsors</h4>
+					<img class="img-fluid d-block mx-auto pt-5 wow fadeInTop" data-wow-offset="200" src="<?php echo get_template_directory_uri(); ?>/img/sponsor-logos.png" alt="<?php echo esc_html_e('', 'understrap') ?>">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="counters" class="bg-blue-gradient">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<span class="counter">1,234,567.00</span>
+					<span>$</span><span class="counter">1.99</span>
+					<span class="counter">12345</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- ******************* The Welcome Area ******************* -->
 	<section id="welcome" class="container">
 			<div class="row">
 				<div class="col-12 wow fadeIn" data-wow-offset="150">
-					<h2 class="section-title text-center"><?php echo esc_html_e('Needs Meet Opportunity', 'understrap') ?></h2>
+					<h2 class="section-title text-center"><?php echo esc_html_e('Need Meets Opportunity', 'understrap') ?></h2>
 					<p class="section-lead lead text-center"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.', 'understrap') ?></p>
 				</div>
 			</div>
@@ -110,73 +276,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="row justify-content-center">
 				<div class="col-md-5">
-					<button class="btn btn-lg btn-primary btn-block" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Get Involved', 'understrap') ?></button>
+					<button class="btn-lg btn-primary btn-block waves-effect waves-light btn" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Get Involved', 'understrap') ?></button>
 				</div>
 			</div>
 	</section><!-- Section #Welcome end -->
-
-
-
-	<!-- ******************* The Latest Causes Area ******************* -->
-	<section id="latest-causes">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<h3 class="text-center section-title"><?php echo esc_html_e('Our Latest Causes', 'understrap'); ?></h3>
-					<p class="section-lead lead text-center"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.', 'understrap'); ?></p>
-				</div>
-			</div>
-
-			<div class="row align-items-center py-5 causes">
-				<div class="col-md-4 wow fadeInLeft" data-wow-duration="1.5s" data-wow-offset="200">
-					<a class="d-block" href="<?php echo esc_url( home_url('/') ); ?>">
-						<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/causes/c1.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
-					</a>
-					<h4><?php echo esc_html_e('Alpha Sqaure', 'understrap') ?></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
-					<a class="read-more" href="<?php echo esc_url( home_url('') ) ?>"><?php echo esc_html_e('Learn More', 'understrap') ?></a>
-				</div>
-
-				<div class="col-md-4 wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="200">
-					<a class="d-block" href="<?php echo esc_url( home_url('/') ); ?>">
-						<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/causes/c2.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
-					</a>
-					<h4><?php echo esc_html_e('Memory-Care Homes', 'understrap') ?></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
-					<a class="read-more" href="<?php echo esc_url( home_url('') ) ?>"><?php echo esc_html_e('Learn More', 'understrap') ?></a>
-				</div>
-
-				<div class="col-md-4 wow fadeInRight" data-wow-duration="1.5s" data-wow-offset="200">
-					<a class="d-block" href="<?php echo esc_url( home_url('/') ); ?>">
-						<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/causes/c3.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
-					</a>
-					<h4><?php echo esc_html_e('Veteran\'s Resource Center', 'understrap') ?></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
-					<a class="read-more" href="<?php echo esc_url( home_url('') ) ?>"><?php echo esc_html_e('Learn More', 'understrap') ?></a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- ******************* The Providers Area ******************* -->
-	<section id="providers" class="container-fluid">
-		<div class="row">
-			<div class="img-contain col-md-6 pl-0 d-none d-md-block wow fadeInLeft" data-wow-duration="2.33s"></div>
-			<div class="col-md-6 py-5 wow fadeInRight">
-					<div class="content">
-						<h3><?php echo esc_html_e('Service Providers', 'understrap'); ?></h3>
-						<p><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do. eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis a ute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'understrap'); ?></p>
-
-						<div class="row pt-4">
-							<div class="col-lg-6">
-								<button class="btn btn-md btn-primary btn-block" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Learn More', 'understrap') ?></button>
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
-	</section>
-	<!-- ******************* END Providers Area ******************* -->
 
 <!-- ******************* The Testimonials Area ******************* -->
 	<section id="testimonials">
@@ -225,136 +328,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div><!-- .carousel -->
 
 	</section>
-
-<!-- ******************* The Sponsors Area ******************* -->
-<section id="sponsors">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<h3 class="text-center section-title wow fadeIn" date-wow-offset="200">Our Sponsors <span>&amp;</span> Partners</h3>
-				<p class="section-lead lead text-center wow fadeIn" data-wow-duration="2s" data-wow-offset="200"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.', 'understrap'); ?></p>
-			</div>
-		</div>
-
-		<div class="row pt-4">
-			<div class="mission col-md-6">
-				<h4 class="wow fadeIn" data-wow-offset="200">Our Mission</h4>
-				<p class="wow fadeIn" data-wow-offset="200">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-
-				<div id="accordion" role="tablist">
-				  <div class="card wow fadeInUp" data-wow-offset="200">
-				    <div class="card-header" role="tab" id="headingOne">
-				      <h5 class="mb-0">
-				        <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-				          <i class="fa fa-home" aria-hidden="true"></i> Section 1 <span class="plus-minus"><i class="fa fa-plus fa-minus" aria-hidden="true"></i></span>
-				        </a>
-				      </h5>
-				    </div>
-
-				    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-				      <div class="card-body">
-				        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-				      </div>
-				    </div>
-				  </div>
-				  <div class="card wow fadeInUp" data-wow-offset="200">
-				    <div class="card-header" role="tab" id="headingTwo">
-				      <h5 class="mb-0">
-				        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				          <i class="fa fa-bank" aria-hidden="true"></i> Section 2 <span class="plus-minus"><i class="fa fa-plus" aria-hidden="true"></i></span>
-				        </a>
-				      </h5>
-				    </div>
-				    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-				      <div class="card-body">
-				        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-				      </div>
-				    </div>
-				  </div>
-				  <div class="card wow fadeInUp" data-wow-offset="200">
-				    <div class="card-header" role="tab" id="headingThree">
-				      <h5 class="mb-0">
-				        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									<i class="fa fa-anchor" aria-hidden="true"></i> Section 3 <span class="plus-minus"><i class="fa fa-plus" aria-hidden="true"></i></span>
-				        </a>
-				      </h5>
-				    </div>
-				    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-				      <div class="card-body">
-				         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-				      </div>
-				    </div>
-				  </div>
-				</div>
-			</div>
-
-			<div class="logos col-md-6">
-				<h4 class="wow fadeIn" data-wow-offset="200">Our Sponsors</h4>
-				<img class="img-fluid d-block mx-auto pt-5 wow fadeInRight" data-wow-offset="200" src="<?php echo get_template_directory_uri(); ?>/img/sponsor-logos.png" alt="<?php echo esc_html_e('', 'understrap') ?>">
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- ******************* The Latest News ******************* -->
-<section id="news">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<h3 class="text-center section-title wow fadeIn" date-wow-offset="200"><?php echo esc_html_e('Our Latest News', 'understrap'); ?></h3>
-				<p class="section-lead lead text-center wow fadeIn" data-wow-duration="2s" data-wow-offset="200"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.', 'understrap'); ?></p>
-			</div>
-		</div>
-
-		<div class="row my-5">
-			<div class="col-md-5">
-					<div class="post-featured wow fadeIn" data-wow-offset="200" data-wow-duration="2s">
-						<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/post-featured.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
-						<div class="overlay-box text-center">
-							<h4>Homes Fore the Homeless Golf Tournament 2017</h4>
-							<p>Aug 25th, 2017 |	NEWS | <a href="#">EVENTS</a></p>
-							<button class="btn btn-md btn-primary btn-block" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Read More', 'understrap') ?></button>
-						</div>
-					</div>
-			</div>
-
-			<div class="col-md-7">
-				<div class="post-latest d-flex wow fadeInRight" data-wow-offset="200">
-					<div class="image-thumb">
-						<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/post-thmb-1.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
-					</div>
-					<div class="post-article">
-						<a href="#"><h4>‘Homes Fore the Homeless’ Golf Tournament 2017</h4></a>
-						<p>Aug 25th, 2017	|	NEWS	|	EVENTS</p>
-						<a href="#">Read More »</a>
-					</div>
-				</div>
-
-				<div class="post-latest d-flex wow fadeInRight" data-wow-offset="200">
-					<div class="image-thumb">
-						<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/post-thmb-2.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
-					</div>
-					<div class="post-article">
-						<a href="#"><h4>Gold Nugget Win at PCBC for HomeAid San Diego</h4></a>
-						<p>Sept 14th, 2017	|	NEWS	|	EVENTS</p>
-						<a href="#">Read More »</a>
-					</div>
-				</div>
-
-				<div class="post-latest d-flex wow fadeInRight" data-wow-offset="200">
-					<div class="image-thumb">
-						<img class="img-fluid d-block mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/post-thmb-3.jpg" alt="<?php echo esc_html_e('', 'understrap') ?>">
-					</div>
-					<div class="post-article">
-						<a href="#"><h4>"Rey of Hope" - 15 Year Celebration</h4></a>
-						<p>Oct 27th, 2017	|	NEWS	|	EVENTS</p>
-						<a href="#">Read More »</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 <!-- ******************* The Donate CTA ******************* -->
 <section id="donate">

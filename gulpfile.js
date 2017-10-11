@@ -133,6 +133,22 @@ gulp.task('sass', function () {
     return stream;
 });
 
+gulp.task('sass-materialize', function () {
+    var stream = gulp.src('./sass/materialize/*.scss')
+        .pipe(plumber({
+            errorHandler: function (err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
+        .pipe(sourcemaps.init()) // add this
+        .pipe(sass())
+        .pipe( autoprefixer( AUTOPREFIXER_BROWSERS ) )
+        .pipe(sourcemaps.write('./')) // add this
+        .pipe(gulp.dest('./css'))
+    return stream;
+});
+
 
 // Run:
 // gulp watch
@@ -188,13 +204,28 @@ gulp.task('minify-css', function() {
     .pipe(gulp.dest('./css/'));
 });
 
+gulp.task('minify-materialize-css', function() {
+  return gulp.src('./css/materialize.css')
+  .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(cleanCSS({compatibility: '*'}))
+    .pipe(plumber({
+            errorHandler: function (err) {
+                console.log(err);
+                this.emit('end');
+            }
+        }))
+    .pipe(rename({suffix: '.min'}))
+     .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('./css/'));
+});
+
 gulp.task('cleancss', function() {
   return gulp.src('./css/*.min.css', { read: false }) // much faster
     .pipe(ignore('theme.css'))
     .pipe(rimraf());
 });
 
-gulp.task('styles', function(callback){ gulpSequence('sass', 'minify-css')(callback) });
+gulp.task('styles', function(callback){ gulpSequence('sass', 'minify-css', 'sass-materialize', 'minify-materialize-css')(callback) });
 
 
 // Run:
@@ -225,6 +256,12 @@ gulp.task('scripts', function() {
 
         // Materialize JS
         basePaths.dev + 'js/materialize.min.js',
+
+        // WayPoints JS
+        basePaths.dev + 'js/jquery.waypoints.min.js',
+
+        // CounterUp JS
+        basePaths.dev + 'js/jquery.counterup.min.js',
 
         // WOW js
         basePaths.dev + 'js/wow.js',

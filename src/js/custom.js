@@ -12,3 +12,18 @@ new WOW().init();
     $(this).children('.plus-minus').find('i.fa').toggleClass('fa-minus');
   });
 } )( jQuery );
+
+
+( function( $ ) {
+
+  $('.counter').counterUp({
+    delay: 10,
+    time: 5000,
+    offset: 100,
+    // beginAt: 100,
+    // formatter: function (n) {
+    //   return n.replace(/,/g, '.');
+    // }
+});
+
+} )( jQuery );

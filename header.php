@@ -88,7 +88,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md navbar-light bg-blue-gradient">
+		<nav class="navbar navbar-expand-md navbar-light bg-blue-gradient z-depth-2">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
@@ -108,15 +108,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 				);?>
 
 				<ul class="social-media justify-content-center">
-					<li><a href="<?php echo esc_url('#'); ?>" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
 					<li><a href="<?php echo esc_url('#'); ?>" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
-					<li><a href="<?php echo esc_url('#'); ?>" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
+					<li><a href="<?php echo esc_url('#'); ?>" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+					<li><a href="<?php echo esc_url('#'); ?>" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
+					<li><a href="<?php echo esc_url('#'); ?>" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
 				</ul>
 
 				<div class="donate-involve">
-					<button class="btn btn-lg btn-secondary btn-block" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php esc_html_e( 'Donate',
-					'understrap' ); ?></button> <button class="btn btn-lg btn-secondary btn-block" href="<?php echo esc_url( home_url( '/' ) ) ?>"><?php esc_html_e( 'Get Involved',
-					'understrap' ); ?></button>
+					<button class="btn btn-lg btn-secondary btn-block" href="<?php echo esc_url( home_url( '/' ) ) ?>" hidden><?php esc_html_e( 'Get Involved','understrap' ); ?></button>
 				</div>
 
 			<?php if ( 'container' == $container ) : ?>
