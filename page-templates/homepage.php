@@ -105,7 +105,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 	<!-- ******************* The Latest News ******************* -->
-	<section id="news">
+	<section id="news" hidden>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
@@ -176,7 +176,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 						<div class="row pt-4">
 							<div class="col-lg-6">
-								<button class="btn btn-md btn-primary btn-block" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Learn More', 'understrap') ?></button>
+								<button class="btn btn-md btn-secondary btn-block waves-effect waves-light" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Learn More', 'understrap') ?></button>
 							</div>
 						</div>
 					</div>
@@ -190,34 +190,97 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h3 class="text-center section-title wow fadeIn" date-wow-offset="200">Our Sponsors <span>&amp;</span> Partners</h3>
+					<h3 class="text-center section-title wow fadeIn" date-wow-offset="200">Our Sponsors <span>&amp;</span> Donors</h3>
 					<p class="section-lead lead text-center wow fadeIn" data-wow-duration="2s" data-wow-offset="200"><?php echo esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.', 'understrap'); ?></p>
 				</div>
 			</div>
+		</div>
 
-			<div class="row pt-4">
-				<div class="logos col-md-6">
-					<h4 class="wow fadeIn" data-wow-offset="200">Our Sponsors</h4>
-					<img class="img-fluid d-block mx-auto pt-5 wow fadeInTop" data-wow-offset="200" src="<?php echo get_template_directory_uri(); ?>/img/sponsor-logos.png" alt="<?php echo esc_html_e('', 'understrap') ?>">
+		<div class="container-fluid">
+			<div class="row mt-5 mb-3 pt-4">
+				<div class="logos col-12 px-0">
+					<ul class="bxslider">
+					  <li><img src="/images/pic1.jpg" /></li>
+					  <li><img src="/images/pic2.jpg" /></li>
+					  <li><img src="/images/pic3.jpg" /></li>
+					  <li><img src="/images/pic4.jpg" /></li>
+
+						<li><img src="/images/pic1.jpg" /></li>
+					  <li><img src="/images/pic2.jpg" /></li>
+					  <li><img src="/images/pic3.jpg" /></li>
+					  <li><img src="/images/pic4.jpg" /></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="counters" class="bg-blue-gradient">
-		<div class="container">
+	<section id="counters">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
-					<span class="counter">1,234,567.00</span>
-					<span>$</span><span class="counter">1.99</span>
-					<span class="counter">12345</span>
+					<h3 class="text-center section-title wow fadeIn" date-wow-offset="200">A Record of Success</h3>
+					<p class="section-lead lead text-center wow fadeIn" data-wow-duration="2s" data-wow-offset="200"><?php echo esc_html_e('Building Hope for Today\'s Homeless', 'understrap'); ?></p>
+				</div>
+			</div>
+
+			<div id="stats" class="row wow fadeIn" date-wow-offset="200">
+				<div class="col-12">
+					<ul class="d-flex justify-content-center">
+						<li><div class="holder"><div class="number-box"><span class="counter">25</span></div></div><i class="fa fa-home fa-3x mt-2"></i><h4 class="mt-3">Shelters Built or Renovated</h4></li>
+
+						<li><div class="holder"><div class="number-box">&#x24;<span class="counter">33,150,000</span></div></div><i class="fa fa-balance-scale fa-3x mt-2"></i><h4 class="mt-3">Project Value</h4></li>
+
+						<li><div class="holder"><div class="number-box">&#x24;<span class="counter">5,364,000</span></div></div><i class="fa fa-heart fa-3x mt-2"></i><h4  class="mt-3">In-Kind Donations</h4></li>
+
+						<li><div class="holder"><div class="number-box">~<span class="counter">153,000</span></div></div><i class="fa fa-balance-scale fa-3x mt-2"></i><h4 class="mt-3">Sqaure Feet</h4></li>
+
+						<li><div class="holder"><div class="number-box"><span class="counter">711</span></div></div><i class="fa fa-bed fa-3x mt-2"></i><h4 class="mt-3">New Permanent Beds</h4></li>
+
+						<li><div class="holder"><div class="number-box"><span class="counter">259,515</span></div></div><i class="fa fa-moon-o fa-3x mt-2"></i><h4 class="mt-3">Annual Bed Nights</h4></li>
+
+						<li><div class="holder"><div class="number-box"><span class="counter">6</span></div></div><i class="fa fa-wrench fa-3x mt-2"></i><h4 class="mt-3">Shelter Projects in Pre-Development</h4></li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- ******************* The Welcome Area ******************* -->
-	<section id="welcome" class="container">
+	<section id="welcome">
+		<div class="absolute">
+			<div class="container-fluid">
+				<div class="row">
+				  <div class="col-md-2">
+				  	<div class="md-blue rellax"
+				  		data-rellax-speed="1"
+				  		style="transform: rotate(45deg)">
+				  	</div>
+
+						<div class="sm-blue-dark rellax"
+				  		data-rellax-speed="2"
+				  		style="transform: rotate(45deg); margin-top:500px; margin-left:150px">
+				  	</div>
+				  </div>
+
+					<div class="col-md-2">
+				  	<div class="sm-grey rellax"
+				  		data-rellax-speed="3"
+				  		style="transform: rotate(45deg); margin-top:800px; margin-left:-30px">
+				  	</div>
+				  </div>
+
+					<div class="col-md-2 ml-auto">
+				  	<div class="md-blue rellax"
+				  		data-rellax-speed="2"
+				  		style="transform: rotate(45deg); margin-top:1200px; margin-left:-30px">
+				  	</div>
+				  </div>
+
+				</div>
+			</div>
+		</div>
+		<div class="container">
 			<div class="row">
 				<div class="col-12 wow fadeIn" data-wow-offset="150">
 					<h2 class="section-title text-center"><?php echo esc_html_e('Need Meets Opportunity', 'understrap') ?></h2>
@@ -279,6 +342,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<button class="btn-lg btn-primary btn-block waves-effect waves-light btn" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Get Involved', 'understrap') ?></button>
 				</div>
 			</div>
+
+		</div><!-- .container end -->
 	</section><!-- Section #Welcome end -->
 
 <!-- ******************* The Testimonials Area ******************* -->
@@ -334,7 +399,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-md-3">
-				<img class="img-fluid d-block mx-auto pt-5 wow zoomIn" data-wow-offset="200" data-wow-duration="2.7s" src="<?php echo get_template_directory_uri(); ?>/img/donate-heart.png" alt="<?php echo esc_html_e('Your Donation Could Save a Life', 'understrap') ?>">
+				<img class="img-fluid d-block mx-auto pt-5 wow zoomIn" data-wow-offset="200" data-wow-duration="1.5s" src="<?php echo get_template_directory_uri(); ?>/img/donate-heart.png" alt="<?php echo esc_html_e('Your Donation Could Save a Life', 'understrap') ?>">
 			</div>
 
 			<div class="col-md-6">

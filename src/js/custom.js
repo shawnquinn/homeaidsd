@@ -1,8 +1,15 @@
 // Custom JavaScript File
 new WOW().init();
 
+var rellax = new Rellax('.rellax', {
+  speed: -2,
+  center: false,
+  round: true
+});
+
 ( function( $ ) {
 
+  // Carousel Main
   $(".carousel-item").first().addClass( "active" );
 
   // Click toggle Accordion
@@ -11,19 +18,43 @@ new WOW().init();
   $link.on('click', function() {
     $(this).children('.plus-minus').find('i.fa').toggleClass('fa-minus');
   });
+
+  //Bx Slider
+  $('.bxslider').bxSlider({
+    minSlides: 4,
+    maxSlides: 4,
+    slideWidth: 170,
+    slideMargin: 10,
+    ticker: true,
+    speed: 12000
+  });
+
+  // ScrollToTop
+  $(window).scroll(function(){
+		if ($(this).scrollTop() > 500) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+
 } )( jQuery );
 
 
 ( function( $ ) {
-
   $('.counter').counterUp({
-    delay: 10,
-    time: 5000,
+    delay: 50,
+    time: 2000,
     offset: 100,
     // beginAt: 100,
     // formatter: function (n) {
     //   return n.replace(/,/g, '.');
     // }
-});
-
+  });
 } )( jQuery );

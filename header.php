@@ -27,16 +27,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hfeed site" id="page">
 
+	<a href="#page" class="scrollToTop">
+		<span class="fa-stack fa-2x">
+		  <i class="fa fa-circle fa-stack-2x"></i>
+		  <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+		</span>
+	</a>
+
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 
-		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
-		'understrap' ); ?></a>
+		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
 		<nav class="navbar navbar-expand-md navbar-light bg-light">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
+				<div class="button-box">
+					<button href="#" type="button" name="donate">Donate</button>
+					<button href="#" type="button" name="donate">Need Shelter?</button>
+				</div>
 		<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->

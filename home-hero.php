@@ -24,7 +24,7 @@
 
 								<div class="row mt-5">
 									<div class="col-lg-6">
-										<button class="btn btn-lg btn-primary btn-block" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Donate Today ') ?><i class="fa fa-heart fa-lg pl-2"></i></button>
+										<button class="btn btn-lg btn-primary btn-block waves-effect waves-blue" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Donate Today ') ?><i class="fa fa-heart fa-lg pl-2"></i></button>
 									</div>
 								</div>
 							</div>

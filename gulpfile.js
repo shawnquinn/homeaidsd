@@ -257,6 +257,12 @@ gulp.task('scripts', function() {
         // Materialize JS
         basePaths.dev + 'js/materialize.min.js',
 
+        // BXSlider
+        basePaths.dev + 'js/jquery.bxslider.min.js',
+
+        // Rellax JS
+        basePaths.dev + 'js/rellax.js',
+
         // WayPoints JS
         basePaths.dev + 'js/jquery.waypoints.min.js',
 
