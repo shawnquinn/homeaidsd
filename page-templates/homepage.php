@@ -200,15 +200,25 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="row mt-5 mb-3 pt-4">
 				<div class="logos col-12 px-0">
 					<ul class="bxslider">
-					  <li><img src="/images/pic1.jpg" /></li>
-					  <li><img src="/images/pic2.jpg" /></li>
-					  <li><img src="/images/pic3.jpg" /></li>
-					  <li><img src="/images/pic4.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-1.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-2.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-3.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-4.jpg" /></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-5.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-6.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-7.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-8.jpg" /></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-9.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-10.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-11.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-12.jpg" /></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-13.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-14.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-15.jpg" /></li>
+					  <li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-16.jpg" /></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/logos/logo-17.jpg" /></li>
+							<!-- Backup Row for Loading -->
 
-						<li><img src="/images/pic1.jpg" /></li>
-					  <li><img src="/images/pic2.jpg" /></li>
-					  <li><img src="/images/pic3.jpg" /></li>
-					  <li><img src="/images/pic4.jpg" /></li>
 					</ul>
 				</div>
 			</div>

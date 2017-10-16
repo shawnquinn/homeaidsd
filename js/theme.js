@@ -4683,14 +4683,16 @@ var rellax = new Rellax('.rellax', {
     $(this).children('.plus-minus').find('i.fa').toggleClass('fa-minus');
   });
 
-  //Bx Slider
+  //Bx Slider - Ticker
   $('.bxslider').bxSlider({
     minSlides: 4,
     maxSlides: 4,
-    slideWidth: 170,
-    slideMargin: 10,
+    useCSS: false,
+    slideWidth: 200,
+    slideMargin: 50,
     ticker: true,
-    speed: 12000
+    speed: 32000,
+    tickerHover: true
   });
 
   // ScrollToTop
