@@ -34,7 +34,7 @@ a {
 
 .bg-blue-gradient {
   z-index: 1;
-  background: linear-gradient($brand-primary 40%, $brand-primary-dark);
+  background: linear-gradient($brand-primary 40%, darken($brand-primary-dark, 5%));
 }
 
 .bg-light {
@@ -307,11 +307,28 @@ h6 {
 }
 
 .carousel-inner {
-  #slide-1 {
-    background: url('../img/slide-1.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  #slide {
+    &.slide-1 {
+      background: url('../img/slide-1.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &.slide-2 {
+      background: url('../img/slide-2.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &.slide-3 {
+      background: url('../img/slide-3.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
     @include media-breakpoint-down(sm) {
       background-position: 60% center;
     }
@@ -345,6 +362,12 @@ h6 {
 
     h1 {
       font-size: 72px;
+      &.alt {
+        color: $white;
+        span {
+          color: $white;
+        }
+      }
       @include media-breakpoint-down(lg) {
         font-size: 54px;
       }
@@ -369,6 +392,7 @@ h6 {
       }
 
       span {
+
         font-family: $font-secondary;
         font-weight: 300;
       }
@@ -377,6 +401,9 @@ h6 {
     p {
       font-size: 22px;
       margin: 2rem 0 0;
+      &.alt {
+        color: $white;
+      }
       @include media-breakpoint-down(md) {
         font-size: 18px;
       }
@@ -482,6 +509,8 @@ h6 {
   padding-bottom: 0;
   background: $brand-primary-dark;
   background: linear-gradient(135deg, $brand-primary 50%, $brand-primary-dark);
+  background: url("../img/bg-smooth.jpg");
+  background-size: cover;
 
   .content {
     max-width: 80%;
@@ -594,7 +623,12 @@ h6 {
     width: 100%;
     height: 100%;
     content: '';
-    background: linear-gradient(rgba($brand-primary, .8) 50%, rgba($brand-primary-dark, .9));
+    //background: linear-gradient(rgba($brand-primary, .8) 50%, rgba($brand-primary-dark, .9));
+    background: url("../img/bg-smooth.jpg");
+    background-size: cover;
+    background-position: center top;
+    opacity: 0.9;
+
   }
 
   .carousel,
@@ -828,9 +862,16 @@ h6 {
   padding-top: 7rem;
   padding-bottom: 8rem;
   color: $white;
-  background: linear-gradient(160deg, $brand-primary, $brand-primary-dark);
+  //background: linear-gradient(160deg, $brand-primary, $brand-primary-dark);
+  background: url("../img/bg-smooth.jpg");
+  background-size: cover;
+  background-position: center top;
   text-shadow: 0 4px 8px rgba(#000, .3);
-
+  position: relative;
+  .container, .container-fluid {
+    position: relative;
+    z-index: 5;
+  }
   h3,
   p {
     color: $white;
@@ -900,7 +941,9 @@ h6 {
   color: #fff;
   //  background-color: $brand-primary;
   background: linear-gradient(135deg, $brand-primary, $brand-primary-dark);
-
+  background: url("../img/bg-smooth.jpg");
+  background-size: cover;
+  background-position: center top;
   img.footer-logo {
     width: 200px;
     height: auto;

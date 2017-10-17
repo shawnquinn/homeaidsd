@@ -12885,9 +12885,9 @@ a {
 
 .bg-blue-gradient {
   z-index: 1;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #169BBF), to(#0C5366));
-  background: -webkit-linear-gradient(#169BBF 40%, #0C5366);
-  background: linear-gradient(#169BBF 40%, #0C5366); }
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #169BBF), to(#09404f));
+  background: -webkit-linear-gradient(#169BBF 40%, #09404f);
+  background: linear-gradient(#169BBF 40%, #09404f); }
 
 .bg-light {
   background-color: #ffffff !important; }
@@ -13107,17 +13107,31 @@ h6 {
 .carousel-inner .row {
   height: 100%; }
 
-.carousel-inner #slide-1 {
+.carousel-inner #slide.slide-1 {
   background: url("../img/slide-1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
-  @media (max-width: 767px) {
-    .carousel-inner #slide-1 {
-      background-position: 60% center; } }
-  @media (max-width: 575px) {
-    .carousel-inner #slide-1 {
-      background-position: 65% center; } }
+
+.carousel-inner #slide.slide-2 {
+  background: url("../img/slide-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.carousel-inner #slide.slide-3 {
+  background: url("../img/slide-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+@media (max-width: 767px) {
+  .carousel-inner #slide {
+    background-position: 60% center; } }
+
+@media (max-width: 575px) {
+  .carousel-inner #slide {
+    background-position: 65% center; } }
 
 .carousel-inner .carousel-item {
   height: 630px; }
@@ -13137,6 +13151,10 @@ h6 {
         background-color: rgba(255, 255, 255, 0.5); } }
   .carousel-inner .carousel-item h1 {
     font-size: 72px; }
+    .carousel-inner .carousel-item h1.alt {
+      color: #ffffff; }
+      .carousel-inner .carousel-item h1.alt span {
+        color: #ffffff; }
     @media (max-width: 1199px) {
       .carousel-inner .carousel-item h1 {
         font-size: 54px; } }
@@ -13163,6 +13181,8 @@ h6 {
   .carousel-inner .carousel-item p {
     font-size: 22px;
     margin: 2rem 0 0; }
+    .carousel-inner .carousel-item p.alt {
+      color: #ffffff; }
     @media (max-width: 991px) {
       .carousel-inner .carousel-item p {
         font-size: 18px; } }
@@ -13239,7 +13259,9 @@ h6 {
   padding-bottom: 0;
   background: #0C5366;
   background: -webkit-linear-gradient(315deg, #169BBF 50%, #0C5366);
-  background: linear-gradient(135deg, #169BBF 50%, #0C5366); }
+  background: linear-gradient(135deg, #169BBF 50%, #0C5366);
+  background: url("../img/bg-smooth.jpg");
+  background-size: cover; }
   #providers .content {
     max-width: 80%;
     padding: 2rem 0 2rem 3rem; }
@@ -13334,9 +13356,10 @@ h6 {
     width: 100%;
     height: 100%;
     content: '';
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(22, 155, 191, 0.8)), to(rgba(12, 83, 102, 0.9)));
-    background: -webkit-linear-gradient(rgba(22, 155, 191, 0.8) 50%, rgba(12, 83, 102, 0.9));
-    background: linear-gradient(rgba(22, 155, 191, 0.8) 50%, rgba(12, 83, 102, 0.9)); }
+    background: url("../img/bg-smooth.jpg");
+    background-size: cover;
+    background-position: center top;
+    opacity: 0.9; }
   #testimonials .carousel,
   #testimonials .container {
     position: relative;
@@ -13499,9 +13522,14 @@ blockquote {
   padding-top: 7rem;
   padding-bottom: 8rem;
   color: #ffffff;
-  background: -webkit-linear-gradient(290deg, #169BBF, #0C5366);
-  background: linear-gradient(160deg, #169BBF, #0C5366);
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+  background: url("../img/bg-smooth.jpg");
+  background-size: cover;
+  background-position: center top;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative; }
+  #counters .container, #counters .container-fluid {
+    position: relative;
+    z-index: 5; }
   #counters h3,
   #counters p {
     color: #ffffff; }
@@ -13559,7 +13587,10 @@ blockquote {
 #wrapper-footer {
   color: #fff;
   background: -webkit-linear-gradient(315deg, #169BBF, #0C5366);
-  background: linear-gradient(135deg, #169BBF, #0C5366); }
+  background: linear-gradient(135deg, #169BBF, #0C5366);
+  background: url("../img/bg-smooth.jpg");
+  background-size: cover;
+  background-position: center top; }
   #wrapper-footer img.footer-logo {
     width: 200px;
     height: auto; }
