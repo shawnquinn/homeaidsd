@@ -45,7 +45,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="container">
 				<div class="button-box">
 					<button href="#" type="button" name="donate">Donate</button>
-					<button href="#" type="button" name="donate">Need Shelter?</button>
+					<button href="#" data-toggle="modal" data-target="#shelterModal" type="button" name="donate">Need Shelter?</button>
 				</div>
 		<?php endif; ?>
 
@@ -135,3 +135,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- .wrapper-navbar end -->
+
+<!-- Modal -->
+<div class="modal fade" id="shelterModal" tabindex="-1" role="dialog" aria-labelledby="Need Shelter" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Need Shelter</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        	<div class="col-12">
+        		<h3>If you need help please contact this number:</h3>
+        	</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>

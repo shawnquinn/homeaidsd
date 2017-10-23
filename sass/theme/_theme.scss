@@ -120,7 +120,7 @@ a {
 
       &:hover {
         opacity: 1;
-        color: $brand-primary-dark !important;
+        //color: $brand-primary-dark !important;
         background: transparent !important;
 
         i {
@@ -254,10 +254,11 @@ h6 {
     border-color: $brand-primary;
     background: $brand-primary;
 
-    &:hover {
+    &:hover, &:focus {
       color: $brand-primary;
       border-color: $brand-primary;
       background: $white;
+      box-shadow: none;
     }
   }
 
@@ -266,10 +267,11 @@ h6 {
     border-color: $white;
     background-color: $white;
 
-    &:hover {
+    &:hover, &:focus {
       color: $white;
       border-color: $brand-primary;
       background-color: $brand-primary;
+      box-shadow: none;
     }
   }
 
@@ -551,7 +553,6 @@ h6 {
 */
 #latest-causes {
   overflow: hidden;
-  padding-top: 1rem;
 
   h3 {
     font-size: 48px;
@@ -650,10 +651,28 @@ h6 {
   }
 }
 
+.carousel-indicators {
+  bottom: 0;
+  margin-bottom: 2.5rem;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: transparentize(#fff, 1);
+
+  &.active {
+    background-color: transparentize(#fff, 0);
+  }
+}
+
+#testimonials {
 
   .carousel-indicators {
     bottom: 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0;
   }
 
   .carousel-indicators li {
@@ -703,20 +722,21 @@ h6 {
   }
 
 
-.author {
-  font-family: $font-header;
-  font-size: 24px;
-  font-style: normal;
-  display: block;
-  margin-top: 1.5rem;
-  color: #fff;
-
-  span {
-    font-family: $font-body;
-    font-size: 16px;
-    font-weight: 700;
+  .author {
+    font-family: $font-header;
+    font-size: 24px;
+    font-style: normal;
     display: block;
-    text-transform: uppercase;
+    margin-top: 1.5rem;
+    color: #fff;
+
+    span {
+      font-family: $font-body;
+      font-size: 16px;
+      font-weight: 700;
+      display: block;
+      text-transform: uppercase;
+    }
   }
 }
 /*
@@ -740,6 +760,7 @@ h6 {
     bottom: 0;
     padding: 1rem 3rem;
     background-color: rgba($white, .85);
+    width: 100%;
   }
 }
 

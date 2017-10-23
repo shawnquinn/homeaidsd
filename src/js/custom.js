@@ -9,6 +9,8 @@ var rellax = new Rellax('.rellax', {
 
 ( function( $ ) {
 
+
+
   // Carousel Main
   $(".carousel-item").first().addClass( "active" );
 

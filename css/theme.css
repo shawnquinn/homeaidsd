@@ -12963,7 +12963,6 @@ a {
         transition: all 0.2s ease-in-out; }
       .social-media li a:hover {
         opacity: 1;
-        color: #0C5366 !important;
         background: transparent !important; }
         .social-media li a:hover i {
           -webkit-transform: scale(1.3);
@@ -13069,18 +13068,22 @@ h6 {
   .btn-primary {
     border-color: #169BBF;
     background: #169BBF; }
-    .btn-primary:hover {
+    .btn-primary:hover, .btn-primary:focus {
       color: #169BBF;
       border-color: #169BBF;
-      background: #ffffff; }
+      background: #ffffff;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
   .btn-secondary {
     color: #169BBF;
     border-color: #ffffff;
     background-color: #ffffff; }
-    .btn-secondary:hover {
+    .btn-secondary:hover, .btn-secondary:focus {
       color: #ffffff;
       border-color: #169BBF;
-      background-color: #169BBF; }
+      background-color: #169BBF;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
   .btn:hover, .wpcf7 input[type=submit]:hover {
     cursor: pointer; }
 
@@ -13291,8 +13294,7 @@ h6 {
 // Latest Causes
 */
 #latest-causes {
-  overflow: hidden;
-  padding-top: 1rem; }
+  overflow: hidden; }
   #latest-causes h3 {
     font-size: 48px; }
 
@@ -13383,12 +13385,25 @@ h6 {
   .carousel-indicators li.active {
     background-color: white; }
 
-blockquote {
+#testimonials .carousel-indicators {
+  bottom: 0;
+  margin-bottom: 0; }
+
+#testimonials .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0); }
+  #testimonials .carousel-indicators li.active {
+    background-color: white; }
+
+#testimonials blockquote {
   font-size: 24px;
   font-style: italic;
   line-height: 2.75rem;
   color: #ffffff; }
-  blockquote::after, blockquote::before {
+  #testimonials blockquote::after, #testimonials blockquote::before {
     position: relative;
     display: inline-block;
     float: left;
@@ -13399,7 +13414,7 @@ blockquote {
     background: url("../img/quote-left.png") no-repeat;
     background-position: 0 bottom;
     background-size: 100%; }
-  blockquote::after {
+  #testimonials blockquote::after {
     position: relative;
     display: inline-block;
     float: right;
@@ -13411,14 +13426,14 @@ blockquote {
     background-position: 0 bottom;
     background-size: 100%; }
 
-.author {
+#testimonials .author {
   font-family: "Roboto Slab", serif;
   font-size: 24px;
   font-style: normal;
   display: block;
   margin-top: 1.5rem;
   color: #fff; }
-  .author span {
+  #testimonials .author span {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -13441,7 +13456,8 @@ blockquote {
     position: absolute;
     bottom: 0;
     padding: 1rem 3rem;
-    background-color: rgba(255, 255, 255, 0.85); }
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100%; }
 
 .post-latest {
   padding-top: 2rem;

@@ -64,6 +64,10 @@ if ( ! function_exists( 'understrap_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		add_image_size( 'post-thumb', 160, 90 );
+
+		add_image_size( 'featured-thumb', 450, 450, true );
+
 		/*
 		 * Adding support for Widget edit icons in customizer
 		 */

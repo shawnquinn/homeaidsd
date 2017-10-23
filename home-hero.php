@@ -25,7 +25,24 @@
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-sm-7">
-								<h1 class="text-center text-sm-left"><?php echo esc_html_e('Mission ', 'understrap') ?><span>&amp;</span><?php echo esc_html_e(' Vision', 'understrap') ?></h1>
+								<h1 class="text-center text-sm-left"><?php echo esc_html_e('Vision ', 'understrap') ?></h1>
+								<p class="text-center text-sm-left"><?php echo esc_html_e('To see a world without homelessness.', 'understrap') ?></p>
+
+								<div class="row mt-5">
+									<div class="col-lg-6">
+										<button class="btn btn-lg btn-primary btn-block waves-effect waves-blue" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Donate Today ') ?><i class="fa fa-heart fa-lg pl-2"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="slide" class="widget_text carousel-item slide-3">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-sm-7">
+								<h1 class="text-center text-sm-left"><?php echo esc_html_e('Mission ', 'understrap') ?></h1>
 								<p class="text-center text-sm-left"><?php echo esc_html_e('Building new lives for homeless families and individuals through housing and community outreach.', 'understrap') ?></p>
 
 								<div class="row mt-5">
@@ -48,23 +65,6 @@
 								<div class="row mt-5">
 									<div class="col-lg-6">
 										<button class="btn btn-lg btn-primary btn-block waves-effect waves-blue" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Learn More ') ?><i class="fa fa-chevron-right fa-lg pl-2"></i></button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div id="slide" class="widget_text carousel-item slide-3">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-sm-7">
-								<h1 class="text-center text-sm-left"><?php echo esc_html_e('Mission ', 'understrap') ?><span>&amp;</span><?php echo esc_html_e(' Vision', 'understrap') ?></h1>
-								<p class="text-center text-sm-left"><?php echo esc_html_e('Building new lives for homeless families and individuals through housing and community outreach.', 'understrap') ?></p>
-
-								<div class="row mt-5">
-									<div class="col-lg-6">
-										<button class="btn btn-lg btn-primary btn-block waves-effect waves-blue" href="<?php echo esc_url( home_url('/') ); ?>"><?php esc_html_e('Donate Today ') ?><i class="fa fa-heart fa-lg pl-2"></i></button>
 									</div>
 								</div>
 							</div>
